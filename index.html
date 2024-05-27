@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Video</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div class="player-container">
+        <video src="./video/Qax Weheri Gozel Menzere.mp4" id="video"></video>
+        <div class="player-controls-container">
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <div class="player-controls">
+            <div class="play-pause-duration">
+              <div class="duration">
+                <i class="fa-solid fa-volume-up" id="mute"></i>
+                <input
+                  type="range"
+                  id="volume-range"
+                  min="0"
+                  max="1"
+                  value="1"
+                  step="any"
+                />
+                <span id="currentTimeElement">0:00</span>
+                <span>/</span>
+                <span id="duration-element">0:00</span>
+              </div>
+            </div>
+            <div class="next-prev">
+              <i class="fa-solid fa-backward" id="prev"></i>
+              <i class="fa-solid fa-play" id="play-pause"></i>
+              <i class="fa-solid fa-forward" id="next"></i>
+            </div>
+            <div class="mute-fullsize">
+              <i class="fa-solid fa-tachometer-alt" id="speed"></i>
+              <i class="fa-solid fa-expand" id="video-size"></i>
+            </div>
+          </div>
+        </div>
+        <div class="speed-container hidden">
+          <p id="speed-2x">2</p>
+          <p id="speed-normal">Normal</p>
+          <p id="speed-05x">0.5</p>
+        </div>
+      </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
